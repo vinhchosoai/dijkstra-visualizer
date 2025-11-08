@@ -174,7 +174,6 @@ const NODE_VISITED_COLOR = '#f4b400'; // Vàng
 const NODE_FINALIZED_COLOR = '#0f9d58'; // Xanh lá
 const NODE_START_COLOR = '#db4437'; // Đỏ
 const EDGE_COLOR = '#999';
-const EDGE_VISITED_COLOR = '#f4b400';
 
 // Hàm vẽ chính (vẽ lại mọi thứ)
 function drawGraph() {
