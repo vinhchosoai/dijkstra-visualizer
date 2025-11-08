@@ -402,7 +402,7 @@ async function runAlgorithm() {
       const node = nodes.get(nodeId)!;
       drawNode(node, NODE_VISITED_COLOR, uiDistances.get(nodeId));
       updateStatus(`Đang xét đỉnh: ${nodeId} (khoảng cách ${uiDistances.get(nodeId)})`);
-      await sleep(500); // TẠM DỪNG 0.5 giây
+      await sleep(2000); // TẠM DỪNG 0.5 giây
     },
 
     // Khi cập nhật khoảng cách (tô màu cạnh, cập nhật số)
