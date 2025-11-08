@@ -1,0 +1,72 @@
+/* --- Cài đặt chung --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #1a1a1a;
+    color: #e2e2e2;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: #4c8bf5; /* Màu xanh của Google */
+}
+
+/* --- Bảng điều khiển --- */
+#controls {
+    margin-bottom: 20px;
+    background-color: #252525;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px; /* Tạo khoảng cách giữa các nút */
+}
+
+button {
+    background-color: #4a4a4a;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+}
+
+button:hover:not(:disabled) {
+    background-color: #4c8bf5;
+}
+
+button:disabled {
+    background-color: #333;
+    color: #777;
+    cursor: not-allowed;
+}
+
+/* --- Trạng thái --- */
+#status-text {
+    font-size: 16px;
+    color: #ffc107; /* Màu vàng */
+    height: 20px;
+    font-weight: 500;
+}
+
+/* --- Canvas (Nơi vẽ) --- */
+#canvas-container {
+    width: 90vw;
+    max-width: 800px;
+    height: 500px;
+    border: 2px dashed #555;
+    background-color: #222;
+    border-radius: 8px;
+    overflow: hidden; /* Đảm bảo canvas nằm gọn bên trong */
+}
+
+#graph-canvas {
+    width: 100%;
+    height: 100%;
+    /* Chúng ta sẽ dùng JS để set width/height thật
+       của canvas để tránh bị mờ */
+}
