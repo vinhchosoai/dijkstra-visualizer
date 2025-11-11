@@ -402,7 +402,7 @@ async function runAlgorithm() {
       const node = nodes.get(nodeId)!;
       drawNode(node, NODE_VISITED_COLOR, uiDistances.get(nodeId));
       updateStatus(`Đang xét đỉnh: ${nodeId} (khoảng cách ${uiDistances.get(nodeId)})`);
-      await sleep(2000); // TẠM DỪNG 0.5 giây
+      await sleep(5000); // TẠM DỪNG 5 giây
     },
 
     // Khi cập nhật khoảng cách (tô màu cạnh, cập nhật số)
@@ -417,14 +417,14 @@ async function runAlgorithm() {
         }
       }
       updateStatus(`Cập nhật: Khoảng cách đến ${nodeId} là ${newDistance}`);
-      await sleep(300); // TẠM DỪNG 0.3 giây
+      await sleep(5000); // TẠM DỪNG 5 giây
     },
 
     // Khi một đỉnh XỬ LÝ XONG (tô màu xanh lá)
     onFinalizeNode: async (nodeId) => {
       const node = nodes.get(nodeId)!;
       drawNode(node, NODE_FINALIZED_COLOR, uiDistances.get(nodeId));
-      await sleep(300); // TẠM DỪNG 0.3 giây
+      await sleep(5000); // TẠM DỪNG 5 giây
     }
   };
 
